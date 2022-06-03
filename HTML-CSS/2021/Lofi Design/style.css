@@ -1,0 +1,131 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75)), url(background.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.banner{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    margin: auto;
+    box-shadow: none;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+.banner ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.banner ul li a{
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    color:#fff;
+}
+.banner ul li::after{
+    content: '';
+    height: 3px;
+    transition: 0.5s;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    background: rgba(5, 151, 230, 0.611);
+}
+.banner ul li:hover::after{
+    opacity: 1;
+}
+.text {
+    width: 100%; 
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    top: 50%;
+    color:rgba(255, 255, 255, 0.75);
+}
+.text h1{
+    font-size: 70px;
+    margin-top: 25px;
+}
+.text p{
+    font-weight: bold;
+    line-height: 40px;
+}
+.butto{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(5, 151, 230, 0.611);
+    position: relative;
+    overflow: hidden;
+}
+span {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    position: absolute;
+    height: 100%;
+    background: rgb(5, 151, 230);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+}
+.butto:hover span{
+    opacity: 1;
+    
+}
+.butto:hover {
+    border: none;
+
+}
+.footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height:fit-content;
+    bottom: 0;
+}
+.lister li{
+    color:white;
+    text-transform: capitalize;
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+.typo{
+    color:white;
+    text-transform: capitalize;
+    text-align: right;
+    top:0;
+    bottom:0;
+    margin-right: 8px;
+}
+
+.butto:active{
+    border: 0.5px solid;
+    border-radius: 25px;
+    transition: 0.5s;
+}

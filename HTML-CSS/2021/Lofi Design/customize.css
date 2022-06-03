@@ -1,0 +1,28 @@
+.text {
+
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: bottom;
+    width: fit-content;
+    background-image: url(https://www.freeiconspng.com/uploads/login-button-icon-png-15.png);
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:auto;
+    margin-top: 25%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.body {
+    background-image: url(file:///C:/Users/Saikawa%20Sama/Desktop/Website%20Code/download.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
