@@ -2,8 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-void insertionSort(int arr[], int n);
-
 int values, count, numberOfElements, help = 0;
 int main(int argc, char *argv[])
 {
@@ -41,7 +39,6 @@ int main(int argc, char *argv[])
     }
 
     // Print the array after being sorted
-    insertionSort(arr, numberOfElements);
     printf("[");
     for (int i = 0; i < numberOfElements - 1; i++)
     {
@@ -77,20 +74,4 @@ int main(int argc, char *argv[])
     else
         printf("\n- The number of triples found: %d\n", count);
     return 0;
-}
-
-// This is the function to sort the array
-void insertionSort(int arr[], int n)
-{
-    for (int i = 1; i < n; i++)
-    {
-        int key = arr[i];
-        int j = i - 1;
-        while (j >= 0 && arr[j] > key)
-        {
-            arr[j + 1] = arr[j];
-            j = j - 1;
-        }
-        arr[j + 1] = key;
-    }
 }
