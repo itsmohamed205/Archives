@@ -1,4 +1,5 @@
-# Archives
-Archives for all the codes I write
-I have it but I don't update it :D
-planning to organize it soon or maybe not
+# Hey, there! 👋
+Sounds like you are checking out my repos. This repository is just an archive for all the random codes I write either for college tasks or for fun 🤷‍♂️
+
+> [!CAUTION]
+> Most of these codes are not optimized at all and may even cause system issues, run them at your own risk
