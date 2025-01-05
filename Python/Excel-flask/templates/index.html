@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel File Comparison</title>
+</head>
+<body>
+    <h1>Upload Local Excel File and Provide Google Sheets URL</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="local_file">Local Excel File:</label>
+        <input type="file" id="local_file" name="local_file" required><br><br>
+        
+        <label for="google_sheet_url">Google Sheets URL:</label>
+        <input type="url" id="google_sheet_url" name="google_sheet_url" required><br><br>
+        
+        <label for="column_name">Column Name:</label>
+        <input type="text" id="column_name" name="column_name" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if success %}
+        <h2>Files Processed Successfully!</h2>
+        <a href="{{ modified_local_download }}">Download Modified Local File</a>
+    {% elif error %}
+        <h2>Error: {{ error }}</h2>
+    {% endif %}
+</body>
+</html>
